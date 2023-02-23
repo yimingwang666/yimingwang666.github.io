@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="专为王仡铭先生定制的导航页">
+    <title>导航</title>
+    <link rel="shortcut icon" href="images/favicon1.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="placeholder"></div>
+    <div class="search">
+        <div class="search_choice">
+            <ul id="nav">
+                <li id="bing" class="active"></li>
+                <li id="google"></li>
+                <li id="baidu"></li>
+                <li id="wikipedia"></li>
+                <li id="zhihu"></li>
+            </ul>
+        </div>
+        <div class="search_box">
+            <form action="https://www.bing.com/search" method="GET" id="search_box">
+                <input type="text" name="q" class="text" id="text">
+                <input type="image" class="search_button" value="" src="images/search.svg">
+            </form>
+        </div>
+    </div>
+    <div class="tab">
+        <div class="tab_hd">
+            <ul>
+                <li onmouseover="changeBodyDisplay(1)">常用</li>
+                <li onmouseover="changeBodyDisplay(2)">SJTU</li>
+                <li onmouseover="changeBodyDisplay(3)">资料</li>
+                <li onmouseover="changeBodyDisplay(4)">学习</li>
+                <li onmouseover="changeBodyDisplay(5)">设计</li>
+                <li onmouseover="changeBodyDisplay(6)">开发</li>
+                <li onmouseover="changeBodyDisplay(7)">工具</li>
+                <li onmouseover="changeBodyDisplay(8)">娱乐</li>
+                <li onmouseover="changeBodyDisplay(9)">境外势力</li>
+            </ul>
+        </div>
+        <div class="tab_bd bd1">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)"></div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)"></div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1">
+                    <ul>
+                        <li><a href="https://canvas.sjtu.edu.cn/">
+                            <img src="https://canvas.sjtu.edu.cn/favicon.ico" alt="">
+                            <h4>Canvas</h4>
+                        </a></li>
+                        <li><a href="https://t.bilibili.com/?spm_id_from=333.999.0.0">
+                            <img src="https://www.bilibili.com/favicon.ico" alt="">
+                            <h4>动态首页</h4>
+                        </a></li>
+                        <li><a href="https://www.douban.com/">
+                            <img src="https://www.douban.com/favicon.ico" alt="">
+                            <h4>豆瓣</h4>
+                        </a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd2">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)"></div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)"></div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd3">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)">文献</div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)">电子书</div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)">数据库</div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)">词典</div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)">其他</div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd4">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)">平台</div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)">英语</div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd5">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)">图片</div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)">字体</div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)">PPT</div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)">绘画</div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd6">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)">Python</div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)">Web</div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd7">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)"></div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)"></div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd8">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)"></div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)"></div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)"></div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)"></div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)"></div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+        <div class="tab_bd bd9">
+            <div class="tab_choice">
+                <div class="choice choice1" onmouseover="changeTabDisplay(1)">Social Media</div>
+                <div class="choice choice2" onmouseover="changeTabDisplay(2)">News</div>
+                <div class="choice choice3" onmouseover="changeTabDisplay(3)">Opinion</div>
+                <div class="choice choice4" onmouseover="changeTabDisplay(4)">Falun Gong</div>
+                <div class="choice choice5" onmouseover="changeTabDisplay(5)">Tool</div>
+                <div class="choice choice6" onmouseover="changeTabDisplay(6)"></div>
+            </div>
+            <div class="tab_content">
+                <div class="content content1"></div>
+                <div class="content content2"></div>
+                <div class="content content3"></div>
+                <div class="content content4"></div>
+                <div class="content content5"></div>
+                <div class="content content6"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
